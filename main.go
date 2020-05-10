@@ -1,12 +1,19 @@
 package main
 
-import ("fmt" 
-		"math/rand")
+import ("fmt")
 
-func foo() {
-	fmt.Println("The square root of 1-100", rand.Intn(100))
+func add(x, y float64) float64{
+	return x+y
+}
+
+func multiple(a,b string) (string, string)  {
+	return a,b
 }
 
 func main()  {
-	foo()
+	num1, num2 := 5.6, 9.5
+	w1, w2 := "Hello", "world!"
+
+	fmt.Println(add(num1, num2))
+	fmt.Println(multiple(w1, w2))
 }
